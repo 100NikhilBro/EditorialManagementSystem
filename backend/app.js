@@ -5,6 +5,7 @@ const helmet = require('helmet');
 const compression = require('compression');
 const rateLimit = require('express-rate-limit');
 const config = require('./config/env');
+const morgan = require('morgan');
 
 const authRoutes = require('./routes/auth');
 const manuscriptRoutes = require('./routes/manuscript');
@@ -15,10 +16,13 @@ const editorialRoutes = require('./routes/editorial');
 const editorProfileRoutes = require('./routes/editorProfile');
 const paymentRoutes = require('./routes/payment');
 
+const AssociateEditorRoutes = require('./routes/AssociateEditorRoutes');
+
 const app = express();
 
 app.use(helmet());
 app.use(compression());
+app.use(morgan('dev'));
 
 const limiter = rateLimit({
   windowMs: 1 * 60 * 1000,
@@ -49,6 +53,8 @@ app.use('/api/queries', queryRoutes);
 app.use('/api/payments', paymentRoutes);
 app.use('/api', editorialRoutes);
 app.use('/api', editorProfileRoutes);
+app.use('/api',AssociateEditorRoutes);
+
 
 const authController = require('./controllers/authController');
 app.get('/api/orcid/callback', authController.orcidCallback);

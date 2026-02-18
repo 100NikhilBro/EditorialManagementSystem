@@ -57,6 +57,7 @@ import Awards from "./pages/about/Awards";
 import OpenAccess from "./pages/publish/OpenAccess";
 import CompareJournals from "./pages/publish/CompareJournals";
 import LanguageEditing from "./pages/publish/LanguageEditing";
+import AddEditor from "./pages/about/AddEditor";
 
 const HomePage = () => {
   return (
@@ -135,6 +136,9 @@ function App() {
             <Route path="/auth/orcid/callback" element={<OrcidCallback />} />
             <Route path="/help" element={<HelpPage />} />
             <Route path="/my-queries" element={<ProtectedRoute><QueryHistory /></ProtectedRoute>} />
+
+
+            <Route path="/admin/add-editor" element={<AddEditor></AddEditor>}></Route>
 
             <Route 
               path="/role-selection" 
