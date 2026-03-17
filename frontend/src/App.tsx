@@ -103,32 +103,32 @@ function App() {
             <Route path="/" element={<HomePage />} />
 
             <Route path="/aims-and-scope" element={<AimsAndScope />} />
-            <Route path="/all-issues" element={<AllIssues />} />
-            <Route path="/latest-issue" element={<LatestIssue />} />
+            {/* <Route path="/all-issues" element={<AllIssues />} /> */}
+            {/* <Route path="/latest-issue" element={<LatestIssue />} /> */}
             <Route path="/publish/guide-for-authors" element={<GuideForAuthors />} />
             <Route path="/policies-and-guidelines" element={<PoliciesAndGuidelines />} />
             <Route path="/guide_for_authors" element={<GuideForAuthors />} />
-            <Route path="/publish/call-for-authors" element={<CallForAuthorsList />} />
+            {/* <Route path="/publish/call-for-authors" element={<CallForAuthorsList />} /> */}
             <Route path="/publish/call-for-authors/:id" element={<CallForAuthorsDetail />} />
 
-            <Route path="/articles-in-press" element={<ArticlesInPress />} />
-            <Route path="/special-issues" element={<SpecialIssuesPage />} />
-            <Route path="/linked-datasets" element={<LinkedDatasets />} />
+            {/* <Route path="/articles-in-press" element={<ArticlesInPress />} /> */}
+            {/* <Route path="/special-issues" element={<SpecialIssuesPage />} /> */}
+            {/* <Route path="/linked-datasets" element={<LinkedDatasets />} /> */}
             <Route path="/set-up-alerts" element={<SetUpAlerts />} />
-            <Route path="/rss" element={<RSS />} />
+            {/* <Route path="/rss" element={<RSS />} /> */}
 
             <Route path="/journals-and-books" element={<JournalsAndBooks />} />
 
             <Route path="/editorial-board" element={<EditorialBoard />} />
             <Route path="/editor/:id" element={<EditorDetailPage />} />
-            <Route path="/journal-insights" element={<JournalInsights />} />
-            <Route path="/news" element={<News />} />
-            <Route path="/editors-choice" element={<EditorsChoice />} />
-            <Route path="/awards" element={<Awards />} />
+            {/* <Route path="/journal-insights" element={<JournalInsights />} /> */}
+            {/* <Route path="/news" element={<News />} /> */}
+            {/* <Route path="/editors-choice" element={<EditorsChoice />} /> */}
+            {/* <Route path="/awards" element={<Awards />} /> */}
 
-            <Route path="/open-access" element={<OpenAccess />} />
-            <Route path="/compare-journals" element={<CompareJournals />} />
-            <Route path="/language-editing" element={<LanguageEditing />} />
+            {/* <Route path="/open-access" element={<OpenAccess />} /> */}
+            {/* <Route path="/compare-journals" element={<CompareJournals />} /> */}
+            {/* <Route path="/language-editing" element={<LanguageEditing />} /> */}
 
             <Route path="/signup" element={<SignUp />} />
             <Route path="/login" element={<LogIn />} />
